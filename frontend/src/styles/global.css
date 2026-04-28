@@ -1,0 +1,106 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: #f0f2f5;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Ant Design Overrides */
+.ant-card {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03), 0 2px 4px rgba(0, 0, 0, 0.03);
+    border-radius: 12px;
+}
+
+.ant-card:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.ant-btn {
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+.ant-input,
+.ant-input-affix-wrapper,
+.ant-select-selector {
+    border-radius: 8px !important;
+}
+
+.ant-table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.ant-modal-content {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.ant-modal-header {
+    border-radius: 16px 16px 0 0;
+}
+
+.ant-message-notice-content {
+    border-radius: 8px;
+}
+
+.ant-notification-notice {
+    border-radius: 12px;
+}
+
+/* Selection */
+::selection {
+    background: #1890ff;
+    color: #fff;
+}
+
+/* Focus States */
+.ant-input:focus,
+.ant-input-focused,
+.ant-input-affix-wrapper:focus,
+.ant-input-affix-wrapper-focused {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Transitions */
+.ant-card,
+.ant-btn,
+.ant-input,
+.ant-select-selector {
+    transition: all 0.3s ease;
+}
